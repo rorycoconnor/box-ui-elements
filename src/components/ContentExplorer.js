@@ -29,7 +29,8 @@ export default ({ folderId }) => {
                 <div className="elements">
                         <ContentExplorer
                             logoUrl={""}
-                            rootFolderId={rootFolderId}
+                            // rootFolderId={rootFolderId}
+                            rootFolderId='161947932485'
                             token={token}
                             language={"en_US"}
                             contentPreviewProps={{
