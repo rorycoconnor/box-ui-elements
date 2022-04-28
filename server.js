@@ -31,7 +31,7 @@ app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.post("/signedrequest", async (req, res) => {
-  
+  console.log('wassup')
   try {
 
     const signedRequest = decode(req.body.signed_request, signedRequestConsumerSecret);      
