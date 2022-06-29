@@ -23,7 +23,7 @@ export default ({ folderId }) => {
                 <div className="elements">
                 <ContentUploader
                     logoUrl={""}
-                    rootFolderId={folderId}
+                    rootFolderId="166413975208"
                     token={token}
                     canSetShareAccess={true}
                     canUpload={true}
