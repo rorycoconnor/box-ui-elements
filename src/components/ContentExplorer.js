@@ -30,7 +30,7 @@ export default ({ folderId }) => {
                         <ContentExplorer
                             logoUrl={""}
                             // rootFolderId={rootFolderId}
-                            rootFolderId='161948202665'
+                            rootFolderId='166413975208'
                             token={token}
                             language={"en_US"}
                             contentPreviewProps={{
