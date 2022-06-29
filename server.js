@@ -133,7 +133,10 @@ app.get('/box/picker/token-downscope/:folderId', async (req, res) => {
 
 app.get('/box/uploader/token-downscope/:folderId', async (req, res) => {
     try {
-        
+        await client.users.get(client.CURRENT_USER_ID)
+            .then(result => {
+                console.log('uploader', result)
+            })
         const folderId = req.params.folderId;
         const downscopedToken = await client.exchangeToken(UPLOADER_SCOPES, `https://api.box.com/2.0/folders/${folderId}`);
 
