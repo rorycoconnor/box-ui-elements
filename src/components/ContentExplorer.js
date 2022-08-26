@@ -16,7 +16,7 @@ export default ({ folderId }) => {
             setIsLoading(true);
             setRootFolderId(folderId);       
             const result = await axios.get(`${EXPRESS_SERVER_HOST}/box/explorer/token-downscope/${folderId}`);            
-
+            console.log(result)
             setToken(result.data.accessToken);
             setIsLoading(false);
         }

@@ -92,7 +92,7 @@ app.get('/box/explorer/token-downscope/:folderId', async (req, res) => {
             })
         const folderId = req.params.folderId;     
         const downscopedToken = await client.exchangeToken(EXPLORER_SCOPES, `https://api.box.com/2.0/folders/${folderId}`);
-
+        console.log(downscopedToken)
         res.setHeader('Content-Type', 'application/json');
         res.status(200).send(downscopedToken);
     }
