@@ -11,6 +11,10 @@ export default ({ folderId }) => {
     const [rootFolderId, setRootFolderId] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
 
+    const responseInterceptor = (config) => {
+        console.log(config)
+    }
+
     useEffect(() => {
         const fetchToken = async () => {
             setIsLoading(true);
@@ -33,6 +37,7 @@ export default ({ folderId }) => {
                             rootFolderId='166413975208'
                             token={token}
                             language={"en_US"}
+                            responseInterceptor={responseInterceptor}
                             contentPreviewProps={{
                                 showAnnotations: true,
                                 contentSidebarProps: {
