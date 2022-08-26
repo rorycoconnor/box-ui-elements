@@ -12,7 +12,7 @@ export default ({ folderId }) => {
     const [isLoading, setIsLoading] = useState(false);
 
     const responseInterceptor = (config) => {
-        console.log(config)
+        console.log('dadda', config)
     }
 
     useEffect(() => {
@@ -34,9 +34,10 @@ export default ({ folderId }) => {
                         <ContentExplorer
                             logoUrl={""}
                             // rootFolderId={rootFolderId}
-                            rootFolderId='166413975208'
+                            rootFolderId='0'
                             token={token}
                             language={"en_US"}
+                            requestInterceptor={responseInterceptor}
                             responseInterceptor={responseInterceptor}
                             contentPreviewProps={{
                                 showAnnotations: true,
