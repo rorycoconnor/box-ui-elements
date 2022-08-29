@@ -34,7 +34,7 @@ export default ({ folderId }) => {
                         <ContentExplorer
                             logoUrl={""}
                             // rootFolderId={rootFolderId}
-                            rootFolderId='0'
+                            rootFolderId='166413975208'
                             token={token}
                             language={"en_US"}
                             requestInterceptor={responseInterceptor}
