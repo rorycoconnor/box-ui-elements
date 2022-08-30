@@ -37,8 +37,7 @@ export default ({ folderId }) => {
                             rootFolderId='166413975208'
                             token={token}
                             language={"en_US"}
-                            requestInterceptor={responseInterceptor}
-                            responseInterceptor={responseInterceptor}
+
                             contentPreviewProps={{
                                 showAnnotations: true,
                                 contentSidebarProps: {
