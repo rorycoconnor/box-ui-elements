@@ -33,8 +33,8 @@ export default ({ folderId }) => {
                 <div className="elements">
                         <ContentExplorer
                             logoUrl={""}
-                            // rootFolderId={rootFolderId}
-                            rootFolderId='166413975208'
+                            rootFolderId={rootFolderId}
+                            // rootFolderId='166413975208'
                             token={token}
                             language={"en_US"}
 
